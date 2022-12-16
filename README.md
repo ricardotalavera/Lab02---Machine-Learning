@@ -14,23 +14,23 @@ La variable Independiente se refiere a decidir si la estadia de un paciente en e
 #### 2.1.- CARGA DEL ARCHIVO DE TRAINING
 La carga se efectuo con la libreria PANDAS de PYTHON, el archivo a cargar fue un CSV, sin mayores problemas de encoding, la carga transcurre sin novedad. El archivo contó con 410,000 registros, estructurado como sigue :
 
-#   Column                             Non-Null Count   Dtype  
----  ------                             --------------   -----  
- 0   Available Extra Rooms in Hospital  410000 non-null  int64  
- 1   Department                         410000 non-null  object 
- 2   Ward_Facility_Code                 410000 non-null  object 
- 3   doctor_name                        410000 non-null  object 
- 4   staff_available                    410000 non-null  int64  
- 5   patientid                          410000 non-null  int64  
- 6   Age                                410000 non-null  object 
- 7   gender                             410000 non-null  object 
- 8   Type of Admission                  410000 non-null  object 
- 9   Severity of Illness                410000 non-null  object 
- 10  health_conditions                  410000 non-null  object 
- 11  Visitors with Patient              410000 non-null  int64  
- 12  Insurance                          410000 non-null  object 
- 13  Admission_Deposit                  410000 non-null  float64
- 14  Stay (in days)                     410000 non-null  int64  
+- #   Column                             Non-Null Count   Dtype  
+- ---  ------                             --------------   -----  
+- 0   Available Extra Rooms in Hospital  410000 non-null  int64  
+- 1   Department                         410000 non-null  object 
+- 2   Ward_Facility_Code                 410000 non-null  object 
+- 3   doctor_name                        410000 non-null  object 
+- 4   staff_available                    410000 non-null  int64  
+- 5   patientid                          410000 non-null  int64  
+- 6   Age                                410000 non-null  object 
+- 7   gender                             410000 non-null  object 
+- 8   Type of Admission                  410000 non-null  object 
+- 9   Severity of Illness                410000 non-null  object 
+- 10  health_conditions                  410000 non-null  object 
+ -11  Visitors with Patient              410000 non-null  int64  
+ -12  Insurance                          410000 non-null  object 
+ -13  Admission_Deposit                  410000 non-null  float64
+ -14  Stay (in days)                     410000 non-null  int64  
 
 #### 2.2.- REVISION DE LA ESTRUCTURA DEL DATASET
 Como siguiente paso, se procedió a observar la estructura del dataset (vista superior), a fin de ver la cantidad y tipo de  variables que conforman los datos con los que deberemos trabajar. Se ubicó que teníamos 15 variables en total, de las cuales solo 6 eran de caracter numérico. Lo anterior ya nos plantea una estrategia partida de análisis de datos.
@@ -79,11 +79,11 @@ Siendo un problema de clasificación se usaron los siguientes modelos :
 - Regresión Logistica optimizada.
 - Arbol de Clasificación.
 - Random Forest.
-- KNN (K-Nearest Neiighbours)
+- KNN (K-Nearest Neighbours)
 - Redes Neuronales
-- Un ensamble de { regresion Logistica + Arbol de Clasificación + KNN}
+- Un ensamble de { regresión Logistica + Arbol de Clasificación + KNN}
 
-En los modelos de arboles, KNN y Random Forest se usaron grillas de optimiación de hiperparámetros.
+En los modelos de arboles, KNN y Random Forest se usaron grillas de optimización de hiperparámetros.
 
 El objetivo era obtener el maximo RECALL o SENSIBILIDAD, definida como :
 
@@ -94,7 +94,7 @@ donde :
 - **TP = TRUE POSITIVE o cantidad de verdaderos positivos**
 - **FN = FALSE NEGATIVE o cantidad de falsos negativos**
 
-Es bueno recalcar que modelos con muy alta sensbilidad pierden especificidad (aciertos en verdaderos negativos), la idea es buscar un balance o también dependerá del objetivo perseguido.
+Es bueno recalcar que modelos con muy alta sensibilidad pierden especificidad (aciertos en verdaderos negativos), la idea es buscar un balance o también dependerá del objetivo perseguido.
 
 Finalmente se sumo modularidad con pipelines. Fueron tres pipelines (uno por cada modelo escogido).
 
