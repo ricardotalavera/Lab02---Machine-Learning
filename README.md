@@ -78,7 +78,7 @@ donde :
 
 Es bueno recalcar que modelos con muy alta sensibilidad pierden especificidad (aciertos en verdaderos negativos), la idea es buscar un balance o también dependerá del objetivo perseguido.
 
-Finalmente se sumo modularidad con pipelines. Fueron tres pipelines (uno por cada modelo escogido).
+Finalmente se sumo modularidad con pipelines. Fueron cuatro pipelines (uno por cada modelo escogido).
 
 ###  4.- CONCLUSIONES FINALES.
 
