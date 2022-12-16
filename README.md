@@ -14,23 +14,23 @@ La variable Independiente se refiere a decidir si la estadia de un paciente en e
 #### 2.1.- CARGA DEL ARCHIVO DE TRAINING
 La carga se efectuo con la libreria PANDAS de PYTHON, el archivo a cargar fue un CSV, sin mayores problemas de encoding, la carga transcurre sin novedad. El archivo contó con 410,000 registros, estructurado como sigue :
 
-- #   Column                             Non-Null Count   Dtype  
-- ---  ------                             --------------   -----  
-- 0   Available Extra Rooms in Hospital  410000 non-null  int64  
-- 1   Department                         410000 non-null  object 
-- 2   Ward_Facility_Code                 410000 non-null  object 
-- 3   doctor_name                        410000 non-null  object 
-- 4   staff_available                    410000 non-null  int64  
-- 5   patientid                          410000 non-null  int64  
-- 6   Age                                410000 non-null  object 
-- 7   gender                             410000 non-null  object 
-- 8   Type of Admission                  410000 non-null  object 
-- 9   Severity of Illness                410000 non-null  object 
-- 10  health_conditions                  410000 non-null  object 
- -11  Visitors with Patient              410000 non-null  int64  
- -12  Insurance                          410000 non-null  object 
- -13  Admission_Deposit                  410000 non-null  float64
- -14  Stay (in days)                     410000 non-null  int64  
+-     Column                             Non-Null Count   Dtype  
+-     ------                             --------------   -----  
+-    Available Extra Rooms in Hospital  410000 non-null  int64  
+-    Department                         410000 non-null  object 
+-    Ward_Facility_Code                 410000 non-null  object 
+-    doctor_name                        410000 non-null  object 
+-    staff_available                    410000 non-null  int64  
+-    patientid                          410000 non-null  int64  
+-    Age                                410000 non-null  object 
+-    gender                             410000 non-null  object 
+-    Type of Admission                  410000 non-null  object 
+-    Severity of Illness                410000 non-null  object 
+-    health_conditions                  410000 non-null  object 
+-    Visitors with Patient              410000 non-null  int64  
+-    Insurance                          410000 non-null  object 
+-    Admission_Deposit                  410000 non-null  float64
+-    Stay (in days)                     410000 non-null  int64  
 
 #### 2.2.- REVISION DE LA ESTRUCTURA DEL DATASET
 Como siguiente paso, se procedió a observar la estructura del dataset (vista superior), a fin de ver la cantidad y tipo de  variables que conforman los datos con los que deberemos trabajar. Se ubicó que teníamos 15 variables en total, de las cuales solo 6 eran de caracter numérico. Lo anterior ya nos plantea una estrategia partida de análisis de datos.
