@@ -83,3 +83,5 @@ Finalmente se sumo modularidad con pipelines. Fueron tres pipelines (uno por cad
 ###  4.- CONCLUSIONES FINALES.
 
 Como palabras finales se desea resaltar la importancia de tener una buen análisis y sobre todo comprensión de las variables que se estan modelando, los modelos reaccionarán según el input que les brindemos. Si se desea un cambio significativo en los ratios de predicción, deberá venir de brindarle al modelo mejor o máyor información y no necesariamente de aplicar modelos diferentes.
+
+![](https://enzyme.biz/hs-fs/hubfs/inteligencia-artificial-en-la-medicina.jpg?width=693&name=inteligencia-artificial-en-la-medicina.jpg)
